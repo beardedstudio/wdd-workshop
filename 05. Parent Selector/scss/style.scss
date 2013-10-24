@@ -1,0 +1,29 @@
+@import "compass/css3";
+
+* { @include box-sizing(border-box); }
+
+.site-header {
+  background-color: #ccc;
+  padding: 1em;
+  
+  h1 {
+    margin: 0 0 1em 0;
+  }
+}
+
+.primary-navigation {
+  a {
+    color: blue;
+    text-decoration: none;
+    
+    // the parent selector (&) refers to the parent element.
+    // in this case, the pseudo class selectors for :hover and :focus
+    // refer to any anchors inside of .primary-navigation
+    // this is the most common usage of the parent selector.
+    &:hover,
+    &:focus {
+      color: red;
+      text-decoration: underline;
+    }
+  }
+}

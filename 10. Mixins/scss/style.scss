@@ -1,0 +1,33 @@
+@import "compass/css3";
+
+* {@include box-sizing(border-box);}
+
+$link-color: blue;
+$highlight-color: red;
+
+@mixin button {
+  @include border-radius(0.25em);
+  border: none;
+  font-size: 1.2em;
+  padding: 1em;
+  color: #fff;
+  background-color: $link-color;
+  &:hover, &:focus {
+    background-color: purple;
+  }
+}
+
+@mixin button-highlight {
+  @include button;
+  font-size: 1.5em;
+  background-color: $highlight-color;
+  @include border-radius(1.5em);
+}
+
+.button {
+  @include button;
+}
+
+.button-highlight {
+  @include button-highlight;
+}

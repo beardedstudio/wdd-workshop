@@ -1,0 +1,14 @@
+a {
+  color: blue;
+}
+a:hover, a:focus {
+  color: red;
+}
+
+h1, h2 {
+  color: #888888;
+}
+
+p {
+  color: #888888;
+}

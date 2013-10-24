@@ -1,0 +1,30 @@
+@import "compass/css3";
+
+* {@include box-sizing(border-box);}
+
+$link-color: blue;
+$link-color-hover: darken($link-color, 30%);
+$link-color-subtle: lighten($link-color, 20%);
+
+.my-btn {
+  @include border-radius(4px);
+  border: none;
+  font-size: 1.5em;
+  padding: 1em;
+  color: #fff;
+  background-color: $link-color;
+
+  &:hover,
+  &:focus {
+    background-color: $link-color-hover;
+  }
+
+  &.subtle {
+    background-color: $link-color-subtle;
+    &:hover,
+    &:focus {
+      background-color: $link-color-hover;
+    }
+  }
+
+}

@@ -1,0 +1,17 @@
+.primary {
+  background-color: orange;
+  float: left;
+  margin-right: 1.5%;
+  padding: 1em;
+  width: 60%;
+}
+
+.secondary {
+  background-color: red;
+  float: left;
+  padding: 1em;
+  width: 30%;
+}
+.secondary h1 {
+  background-color: pink;
+}

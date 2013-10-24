@@ -1,0 +1,32 @@
+@import "compass/css3";
+
+$bp-sm: 20em;
+$bp-med: 30em;
+$bp-lg: 40em;
+$bp-xl: 64em;
+
+* {
+  @include box-sizing(border-box);
+}
+
+.primary-content {
+  padding: 0.75em;
+  
+  @media screen and (min-width: $bp-lg) {
+    background-color: #ccc;
+    float: left;
+    margin-right: 1.5%;
+    width: 60%;
+  }
+}
+
+.secondary-content {
+  padding: 0.75em;
+  
+  @media screen and (min-width: $bp-lg) {
+    background-color: #ccc;
+    float: left;
+    margin: 0;
+    width: 30%;
+  }
+}

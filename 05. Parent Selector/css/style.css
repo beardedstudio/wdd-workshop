@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.site-header {
+  background-color: #ccc;
+  padding: 1em;
+}
+.site-header h1 {
+  margin: 0 0 1em 0;
+}
+
+.primary-navigation a {
+  color: blue;
+  text-decoration: none;
+}
+.primary-navigation a:hover, .primary-navigation a:focus {
+  color: red;
+  text-decoration: underline;
+}

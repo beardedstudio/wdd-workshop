@@ -1,0 +1,44 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.button {
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  border: none;
+  font-size: 1.2em;
+  padding: 1em;
+  color: #fff;
+  background-color: blue;
+}
+.button:hover, .button:focus {
+  background-color: purple;
+}
+
+.button-highlight {
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  border: none;
+  font-size: 1.2em;
+  padding: 1em;
+  color: #fff;
+  background-color: blue;
+  font-size: 1.5em;
+  background-color: red;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
+  border-radius: 1.5em;
+}
+.button-highlight:hover, .button-highlight:focus {
+  background-color: purple;
+}

@@ -1,0 +1,44 @@
+@import "compass/css3";
+
+* { @include box-sizing(border-box); }
+
+.primary-content {
+  background-color: yellow;
+  float: left;
+  margin-right: 1.5%;
+  padding: 1em;
+  width: 60%;
+  
+  // here, we're using the parent selector (&) AFTER the class name
+  // and it is referring to a parent selector that might be
+  // much further up the DOM tree.
+  // so, .primary-content normally has a yellow bg color,
+  // but here, inside of .internal-page, it has a grey bg color.
+  .internal-page & {
+    background-color: #ccc;
+  }
+  
+  h1 {
+    font-size: 2.0em;
+    margin-bottom: 1.0em;
+  }
+  p {
+    margin-bottom: 1.0em;
+  }
+}
+
+.secondary-content {
+  background-color: yellow;
+  float: left;
+  padding: 1em;
+  width: 30%;
+  
+  .internal-page & {
+    background-color: #ccc;
+  }
+  
+  h1 {
+    font-size: 2.0em;
+    margin-bottom: 1.0em;
+  }
+}

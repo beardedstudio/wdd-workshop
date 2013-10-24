@@ -1,0 +1,24 @@
+@import "compass/css3";
+
+$link-color: blue;
+$link-color-hover: red;
+
+$text-color: #888;
+$heading-color: $text-color;
+
+a {
+  color: $link-color;
+  
+  &:hover,
+  &:focus {
+    color: $link-color-hover;
+  }
+}
+
+h1, h2 {
+  color: $heading-color;
+}
+
+p {
+  color: $text-color;
+}

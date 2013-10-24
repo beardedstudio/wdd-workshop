@@ -1,0 +1,25 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/29150/Circles_Everywhere.svg) no-repeat;
+}
+.no-svg .container {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/29150/tree_bark.png) no-repeat;
+}
+
+.primary-content h1 {
+  font-size: 2.0em;
+  margin-bottom: 1.0em;
+}
+.primary-content p {
+  margin-bottom: 1.0em;
+}
+
+.secondary-content h1 {
+  font-size: 2.0em;
+  margin-bottom: 1.0em;
+}
